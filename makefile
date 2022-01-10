@@ -1,6 +1,6 @@
 COMP=gcc
 
-SRC=main.c
+SRC=main.c source/window/window.c
 
 FLAG=-lraylib -lGL -lm -lpthread -ldl -lrt -lX11
 

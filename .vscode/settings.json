@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "window_comp.h": "c",
+        "raylib.h": "c"
+    }
+}
