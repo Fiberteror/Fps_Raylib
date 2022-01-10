@@ -3,6 +3,9 @@
 #include"src/window/window_init.h"
 #include"render/camera_properties.h"
 #include"render/render.h"
+#include"src/window/window.c"
+#include"render/camera_properties.c"
+#include"render/render.c"
 
 window_comp win;
 
@@ -17,6 +20,7 @@ int main(){
     render_init();
 
     setCamera();
+    SetCameraMode(cp.camera, CAMERA_FIRST_PERSON);
 
     SetTargetFPS(win.FPS);
     while (!WindowShouldClose())
