@@ -1,6 +1,6 @@
 #include<raylib.h>
 
-#include"source/window/window_comp.h"
+#include"src/window/window_init.h"
 
 
 int main(){
@@ -12,8 +12,11 @@ int main(){
     while (!WindowShouldClose())
     {
         
+    BeginDrawing();
 
-        
+    ClearBackground(BLUE);
+
+    EndDrawing();
 
     }
     CloseWindow();

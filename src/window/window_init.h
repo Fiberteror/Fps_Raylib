@@ -1,12 +1,11 @@
 #include<raylib.h>
 
+#define screenwidht 1200
+#define screenheight 720
+
 typedef struct
 {
-
-    int screenwidht;
-    int screenheight;
     int FPS;
-
 }window_comp;
 
 void SetVariables(void);
