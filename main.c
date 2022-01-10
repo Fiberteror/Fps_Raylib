@@ -12,7 +12,6 @@ int main(){
 
     SetWindowVariables();
     SetupWindow();
-
     render_init();
 
 
@@ -23,23 +22,28 @@ int main(){
     player.camera.projection = CAMERA_PERSPECTIVE;
     SetCameraMode(player.camera, CAMERA_FIRST_PERSON);
 
+
     SetTargetFPS(60);
     while (!WindowShouldClose())
     {
         
     UpdateCamera(&player.camera);
 
+
+
     BeginDrawing();
         
+
+
         ClearBackground(BLUE);
-        
+
         BeginMode3D(player.camera);
-        
             render();
-            DrawGrid(10, 1.0f);
+
+
         EndMode3D();
 
-        DrawFPS(10,10);
+
     EndDrawing();
 
     }
