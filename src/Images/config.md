@@ -1,4 +1,4 @@
-                         **Setting texture**
+                                                               **Setting Texture
 ---
 
 To run:
@@ -6,3 +6,5 @@ To run:
   * Don't forget to unzip the folder
   * Choose the filepath using the file tc.py.
   * (:
+
+![Setting Texture](tutorial.png)
