@@ -5,7 +5,18 @@
 
 int main(){
 
-    printf("first test\n");
+    SetVariables();
+
+    SetupWindow();
+
+    while (!WindowShouldClose())
+    {
+        
+
+        
+
+    }
+    CloseWindow();
 
     return 1;
 }
