@@ -1,12 +1,12 @@
 #include<raylib.h>
 
 #include"src/window/window_init.h"
-#include"render/camera_properties.h"
+//#include"render/camera_properties.h"
 #include"render/render.h"
 
 window_comp win;
 
-camera_properties cam;
+//camera_properties cam;
 
 int main(){
 
@@ -16,27 +16,34 @@ int main(){
 
     render_init();
 
-    setCamera();
-    SetCameraMode(cam.camera, CAMERA_FIRST_PERSON);
+    //setCamera();
+
+    Camera camera={0};
+    camera.position = (Vector3){ 4.0f, 2.0f, 4.0f };
+    camera.target = (Vector3){ 0.0f, 1.8f, 0.0f };
+    camera.up = (Vector3){ 0.0f, 1.0f, 0.0f };
+    camera.fovy = 60.0f;
+    camera.projection = CAMERA_PERSPECTIVE;
+    SetCameraMode(camera, CAMERA_FIRST_PERSON);
+
 
     SetTargetFPS(win.FPS);
     while (!WindowShouldClose())
     {
         
-    UpdateCamera(&cam.camera);
-
-    DrawText(TextFormat("X:%d",cam.camera.position.x),20,10,20,WHITE);
+    UpdateCamera(&camera);
 
     BeginDrawing();
         
         ClearBackground(BLUE);
         
-        BeginMode3D(cam.camera);
+        BeginMode3D(camera);
         
             render();
+            DrawGrid(10, 1.0f);
         EndMode3D();
 
-    DrawGrid(30,1);
+        DrawFPS(10,10);
     EndDrawing();
 
     }

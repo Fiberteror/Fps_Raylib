@@ -21,5 +21,4 @@ void render(void){
         DrawCube(renderer.positions[i], 2.0f,renderer.heights[i], 2.0f,renderer.colors[i]);
         DrawCubeWires(renderer.positions[i], 2.0f,renderer.heights[i], 2.0f, MAROON);
     }
-    DrawFPS(10,10);
 }
