@@ -6,6 +6,8 @@
 
 window_comp win;
 
+camera_properties cam;
+
 int main(){
 
     SetVariables();
@@ -22,7 +24,7 @@ int main(){
         
         ClearBackground(BLUE);
         
-        BeginMode3D(camera);
+        BeginMode3D(cam.camera);
         
             render();
         EndMode3D();
