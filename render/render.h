@@ -1,5 +1,6 @@
 #define CUBES 15
 #define MAX_COLUMNS 20
+#define HEIGHT 15
 #include "raylib.h"
 
 typedef struct{
