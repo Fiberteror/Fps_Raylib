@@ -11,6 +11,6 @@ window.FPS=60;
 
 void SetupWindow(void){
 
-InitWindow(screenwidht,screenheight,"develop");
+InitWindow(SCREENWIDTH,SCREENHEIGHT,"develop");
 
 }
