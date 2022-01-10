@@ -10,3 +10,5 @@ void setCamera(void){
     cp.camera.fovy = 60.0f;
     cp.camera.projection = CAMERA_PERSPECTIVE;
 }
+
+SetCameraMode(camera, CAMERA_FIRST_PERSON);
