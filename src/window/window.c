@@ -5,7 +5,7 @@
 //window_comp win;
 window_comp window;
 
-void SetVariables(void){
+void SetWindowVariables(void){
 window.FPS=60;
 }
 
