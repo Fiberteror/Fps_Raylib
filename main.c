@@ -10,7 +10,7 @@ camera_properties cam;
 
 int main(){
 
-    SetVariables();
+    SetWindowVariables();
 
     SetupWindow();
 
