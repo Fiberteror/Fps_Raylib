@@ -9,5 +9,5 @@ typedef struct
     int FPS;
 }window_comp;
 
-void SetVariables(void);
+void SetWindowVariables(void);
 void SetupWindow(void);
