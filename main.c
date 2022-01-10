@@ -27,7 +27,7 @@ int main(){
     SetCameraMode(camera, CAMERA_FIRST_PERSON);
 
 
-    SetTargetFPS(win.FPS);
+    SetTargetFPS(60);
     while (!WindowShouldClose())
     {
         
