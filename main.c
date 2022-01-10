@@ -2,6 +2,7 @@
 
 #include"src/window/window_init.h"
 
+window_comp win;
 
 int main(){
 
@@ -9,12 +10,16 @@ int main(){
 
     SetupWindow();
 
+
+    SetTargetFPS(win.FPS);
     while (!WindowShouldClose())
     {
         
     BeginDrawing();
 
     ClearBackground(BLUE);
+
+    DrawFPS(10,10);
 
     EndDrawing();
 

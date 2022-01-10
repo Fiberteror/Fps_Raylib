@@ -3,6 +3,7 @@
 #define screenwidht 1200
 #define screenheight 720
 
+
 typedef struct
 {
     int FPS;
