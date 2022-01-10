@@ -6,6 +6,7 @@ typedef struct{
     float heights[MAX_COLUMNS];
     Vector3 positions[MAX_COLUMNS];
     Color colors[MAX_COLUMNS];
-}render_init;
+}renderer_comp;
 
+void render_init(void);
 void render(void);

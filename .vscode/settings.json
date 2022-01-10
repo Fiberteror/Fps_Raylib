@@ -3,6 +3,7 @@
         "window_comp.h": "c",
         "raylib.h": "c",
         "window_init.h": "c",
-        "camera_properties.h": "c"
+        "camera_properties.h": "c",
+        "render.h": "c"
     }
 }
