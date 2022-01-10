@@ -16,7 +16,7 @@ void render(void){
     DrawPlane((Vector3){ 0.0f, 0.0f, 0.0f }, (Vector2){ 1032.0f, 1032.0f }, BLACK); // Draw ground
 
                 
-    for (int i = 0; i < CUBES; i++)
+    for (int i = 0; i < 30; i++)
     {
         DrawCube(renderer.positions[i], 2.0f,renderer.heights[i], 2.0f,renderer.colors[i]);
         DrawCubeWires(renderer.positions[i], 2.0f,renderer.heights[i], 2.0f, MAROON);
