@@ -13,7 +13,7 @@ void render_init(void){
 }
 
 void render(void){
-    DrawPlane((Vector3){ 0.0f, 0.0f, 0.0f }, (Vector2){ 1032.0f, 1032.0f }, BLACK); // Draw ground    // Draw a yellow wall
+    DrawPlane((Vector3){ 0.0f, 0.0f, 0.0f }, (Vector2){ 1032.0f, 1032.0f }, BLACK); // Draw ground
 
                 
     for (int i = 0; i < CUBES; i++)
